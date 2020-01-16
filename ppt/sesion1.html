@@ -53,15 +53,6 @@
 					</p>
 				</section>
 				
-				<section>
-					<h2>Taller E-Commerce</h2>
-					<h4><a>Cómo construir mi Tienda Web</a></h4>
-					<p>
-						<br /><br />
-						<small>Santiago Neira <a href="https://www.ticbiz.cl/">&lt;stgoneira@ticbiz.cl&gt;</a></small>
-					</p>
-				</section>
-
 				<!-- Introducción -->
 				<section>
 					<section data-markdown="">
@@ -83,13 +74,16 @@
 					<section data-markdown="">
 						## [Estructura del Taller]()
 
-						- [Sesión #1]() - 10 a 14hrs - 12 Dic
+						- [Sesión #1]() - 10 a 14hrs - 16 Enero
 							* Teoría 
-							* SW Ecommerce tipo SaaS
-							* Nivel dificultad básico 
-						- [Sesión #2]() - 10 a 14hrs - 19 Dic
-							* SW Ecommerce 
-							* Nivel dificultad intermedio 
+							* Planificación
+							* Ambientes
+							* Instalación Ecommerce 
+						- [Sesión #2]() - 10 a 14hrs - 22 Enero
+							* Configuración
+							* Carga Contenido
+							* Personalización 
+							* Tareas Mantención
 						- [Asesoría]() personalizada post taller 
 					</section>
 				</section>
@@ -332,6 +326,66 @@
 						![Ecommerce Planning](img/ecommerce-planning.png)
 						
 					</section>
+					<section data-markdown="">
+						## [Planificación]()
+
+						- Los planes son nuestra [carta de navegación]() para lograr los objetivos
+						- Los planes [NO son estáticos](), continuamente se adaptan y mejoran
+						- Deben ser [flexibles]() para adaptarse a situaciones cambiantes
+					</section>
+					<section data-markdown="">
+						## [Actividad]()
+						
+						- Desarrolle la [planificación]() de manera [escueta]()
+						- Lo importante es hacer [consciente]() algunos temas
+						- Posteriormente en su [casa]() puede [continuar mejorando]() el plan
+						- Dedique como [máximo 5 min.]() por etapa
+					</section>
+					<section data-markdown="">
+						## [1. FODA]()
+
+						- [F]()ortalezas (interno)
+						- [O]()portunidades (externo)
+						- [D]()ebilidades (interno)
+						- [A]()menazas (externo)
+					</section>
+					<section data-markdown="">
+						## [2. Objetivos SMART]()
+
+						- Objetivos [SMART]() o [MARTE]()
+							* [M]()edibles 
+							* [A]()lcanzables 
+							* [R]()ealistas 
+							* [T]()emporales 
+							* [E]()specíficos 
+					</section>
+					<section data-markdown="">
+						## [3. Selección de Inventario]()
+
+						- Seleccione los [productos]() que comercializará vía internet
+						- Cree el árbol de [categorías]()
+					</section>
+					<section data-markdown="">
+						## [3. Selección de Inventario]()
+
+						- Seleccione los [productos]() que comercializará vía internet
+						- Cree el árbol de [categorías]()
+					</section>
+					<section data-markdown="">
+						## [4. Selección de Tecnologías]()
+
+						Con lo que ud. sabe ahora ¿qué tecnologías usaría para confeccionar su ecommerce?
+					</section>
+					<section data-markdown="">
+						## [5. Opciones de Pago]()
+
+						Detalle las opciones de pago que desea incluir
+					</section>
+					<section data-markdown="">
+						## [6. Opciones de Envío]()
+
+						Detalle las opciones de envío que desea incorporar
+					</section>					
 				</section>
 
 				<section data-markdown="">
@@ -340,50 +394,73 @@
 
 				<section>
 					<section data-markdown="">
-						## [Shopify - Paso 1]()
+						## [Ambientes]()
 
-						- Registro 
-						- Configuración - General
-						- Preferencias
-						- Configuración - Idiomas de la tienda
-						- Configuración dominio 
+						- Desarrollo
+						- Producción
 					</section>
 					<section data-markdown="">
-						## [Cómo funcionan los dominios]() 
+						## [Desarrollo]()
 
-						- Domain Name Server (DNS)
-						- Servidor Web (HTTP)
-						- Entidad Encargada Dominios (ej. NIC)
+						- En este caso será mi [propio PC o Notebook]()
+						- Es donde realizaremos las [pruebas]() antes de pasarlas a PRODUCCIÓN
+						- [No]() debemos tener [temor]() de realizar cambios en este ambiente
 					</section>
 					<section data-markdown="">
-						## [Conectar Dominio]() 
-	
-						- Tu registro [A]() debe apuntar a la dirección IP de Shopify, que es 23.227.38.65
-						- Tu registro [www CNAME]() debe apuntar a shops.myshopify.com
-						- [Más información](https://help.shopify.com/es/manual/domains/add-a-domain/using-existing-domains/connecting-domains#add-an-existing-domain-to-your-shopify-store)
+						## [Instalación XAMPP]()
+
+						- Es el Software (SW) que utilizaremos para montar el ambiente de [DESARROLLO]().
+						- Funciona en [Windows](), OS X y Linux.
+						- Su beneficio es que [instala todo]() lo necesario fácilmente
+						- Es el SW que [contiene lo necesario]():
+							* Servidor HTTP
+							* Servidor de Base de Datos
+							* Lenguaje de Programación PHP 
+						- https://www.apachefriends.org
 					</section>
 					<section data-markdown="">
-						## [Catálogo - Paso 2]() 
+						## [XAMPP]()
 
-						- Crear al menos 3 colecciones
-						- Crear al menos 10 productos 
+						- Instale
+						- Suba los servicios de [Apache]() y [MySQL]()
+						- Cree una Base de Datos llamada [wordpress]() en [phpMyAdmin]()
 					</section>
 					<section data-markdown="">
-						## [Apariencia - Paso 3]()
-						
-						- Cambiar tema predeterminado
-						- Volver a tema por defecto
-						- Cambiar el logotipo
-						- Cambiar imagen y texto primer bloque
+						## [Wordpress]()
+
+						- Descargue Wordpress desde https://es.wordpress.org/
+						- Descomprima
+						- [Renombre]() la carpeta a [wp]()
+						- Coloque la carpeta en [c:/xampp/htdocs]()
+						- Siga los pasos desde [http://localhost/wp]()
 					</section>
+				</section>
+
+				<section>
 					<section data-markdown="">
-						## [Páginas Adicionales - Paso 4]() 
+						## [Wordpress]()
 
-						- Crear página "Términos y Condiciones"
-						- Crear página "Nosotros" 
-						- Crear página de "Contacto"
-						- Vincular a través de la navegación
+						- Comenzó como un SW de [Blogging]()
+						- Actualmente es un [CMS]()
+						- Puede extender su funcionalidad a través de [Plugins]()
+						- Cambiar su apariencia a través de [Themes]()
+						- Y soportar varios idiomas a través de [Traducciones]()
+					</section>
+					<section data-markdown>
+						## [Plugin Woocommerce]()
 
+						- Extiende a WP para que funcione como una [plataforma de comercio electrónico]() 
+						- Principales funcionalidades:
+							* Gestión de [Catálogo]()
+							* [Carrito]() de Compras
+							* Gestión de [Pagos Offline]()
+					</section>
+					<section data-markdown>
+						## [Actividad - Woocommerce]()
+
+						- Instalación
+						- Configuración
+						- Ejemplo
 					</section>
 				</section>
 
