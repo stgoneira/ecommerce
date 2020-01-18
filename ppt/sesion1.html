@@ -350,6 +350,21 @@
 						- [A]()menazas (externo)
 					</section>
 					<section data-markdown="">
+						## [1. FODA]()
+
+						- [F]()ortalezas (interno)
+							* Rapidez en la creación de soluciones tecnológicas
+							* Conocimiento del negocio de Ecommerce
+						- [O]()portunidades (externo)
+							* Creciente interés por viajar
+							* Ingreso de aerolíneas lowcost
+						- [D]()ebilidades (interno)
+							* Trabajo realizado por propios dueños,
+							* Mayor parte del tiempo en tareas operativas
+						- [A]()menazas (externo)
+							* Poco poder de negociación con proveedores
+					</section>
+					<section data-markdown="">
 						## [2. Objetivos SMART]()
 
 						- Objetivos [SMART]() o [MARTE]()
@@ -360,17 +375,51 @@
 							* [E]()specíficos 
 					</section>
 					<section data-markdown="">
-						## [3. Selección de Inventario]()
+						## [2. Objetivos SMART]()
 
-						- Seleccione los [productos]() que comercializará vía internet
-						- Cree el árbol de [categorías]()
+						- Conseguir un 1% de participación de mercado de los viajeros fuera de Chile por turimo durante el 1er año de funcionamiento. El 0.5% = 12.515 clientes al año, según estudio [Sernatur del año 2017](https://biblioteca.sernatur.cl/documentos/310.796.15S491a.2017.pdf).
+						- Conseguir al menos 3 proveedores por categoría de productos durante el 1er trimestre. Categorías: Maletas, Acc. Electrónicos, Acc. Higiene, entre otros.
+						- Explotar mercado sudamericano con envíos y cobros internacionales durante el 2do semestre de este año.
+
 					</section>
 					<section data-markdown="">
 						## [3. Selección de Inventario]()
 
 						- Seleccione los [productos]() que comercializará vía internet
-						- Cree el árbol de [categorías]()
+						- Cree el árbol de [categorías](). Recomendación: máx. 3 niveles por usabilidad.
 					</section>
+					<section data-markdown="" data-separator="^\n\n\n" data-separator-vertical="^\n\n">
+						## [3. Selección de Inventario]()
+
+						- Maletas & Mochilas
+							* Maletas
+							* Mochilas
+						- Accesorios
+							* Adaptadores de Enchufes
+							* Cargadores
+							* Candados
+							* Botiquín
+							* Iluminación
+
+
+
+						- Hidratación
+							* Filtros de Agua
+							* Purificador de Agua
+						- Higiene & Cuidado Personal							
+							* Toallas
+							* Secadores
+							* Planchas							
+							* Recipientes
+
+
+
+						- Ropa
+							* Sábanas
+							* Carteras secretas
+							* Cubos empaque
+					</section>
+
 					<section data-markdown="">
 						## [4. Selección de Tecnologías]()
 
@@ -382,9 +431,29 @@
 						Detalle las opciones de pago que desea incluir
 					</section>
 					<section data-markdown="">
+						## [5. Opciones de Pago]()
+
+						- Transferencia
+						- Tarjetas de Crédito Nacionales
+						- Tarjetas de Crédito Internacionales
+						- Tarjetas Prepago
+						- Efectivo en Servipag
+						- Pago contra entrega
+						- Paypal
+						- Stripe
+					</section>
+					<section data-markdown="">
 						## [6. Opciones de Envío]()
 
 						Detalle las opciones de envío que desea incorporar
+					</section>
+					<section data-markdown="">
+						## [6. Opciones de Envío]()
+
+						- Envío [Nacional]() 1-3 días (empresa externa: Chilexpress, Starken, otros)
+						- Envío [mismo día](), compras hasta las 12hrs (transporte interno, sólo comunas: Cerro Navia, Pudahuel, Quinta Normal, Lo Prado, Maipú)
+						- [Retiro]() en Sucursal
+						- DHL envío [internacional]()
 					</section>					
 				</section>
 
@@ -407,7 +476,7 @@
 						- [No]() debemos tener [temor]() de realizar cambios en este ambiente
 					</section>
 					<section data-markdown="">
-						## [Instalación XAMPP]()
+						## [XAMPP]()
 
 						- Es el Software (SW) que utilizaremos para montar el ambiente de [DESARROLLO]().
 						- Funciona en [Windows](), OS X y Linux.
@@ -416,23 +485,40 @@
 							* Servidor HTTP
 							* Servidor de Base de Datos
 							* Lenguaje de Programación PHP 
-						- https://www.apachefriends.org
 					</section>
 					<section data-markdown="">
-						## [XAMPP]()
+						## [Paso 1: XAMPP]()
 
+						- Descargue XAMPP desde https://www.apachefriends.org
 						- Instale
+						- Ejecute [xampp-control.exe]()
 						- Suba los servicios de [Apache]() y [MySQL]()
-						- Cree una Base de Datos llamada [wordpress]() en [phpMyAdmin]()
+					</section>
+					<section data-markdown>
+						## [Paso 2: Base de Datos]()
+	
+						- Abra su navegador de preferencia (ej. Google Chrome)
+						- Vaya a [http://localhost/phpmyadmin]()
+						- Cree una base de datos llamada [wordpress]()
 					</section>
 					<section data-markdown="">
-						## [Wordpress]()
+						## [Paso 3: Wordpress]()
 
 						- Descargue Wordpress desde https://es.wordpress.org/
 						- Descomprima
 						- [Renombre]() la carpeta a [wp]()
 						- Coloque la carpeta en [c:/xampp/htdocs]()
-						- Siga los pasos desde [http://localhost/wp]()
+						- Vaya al navegador a la url [http://localhost/wp]() y siga los pasos del instalador:
+							* Usuario de Base Datos: [root]()
+							* [Password en blanco]() (borre todo lo que sale en ese campo)
+					</section>
+					<section data-markdown>
+						## [Paso 4: Woocommerce]()
+	
+						- Vaya al administrador de Wordpress [http://localhost/wp/wp-admin]()
+						- Ingrese en la sección plugins del menú y pinche [Agregar Nuevo]()
+						- Busque [woocommerce]()
+						- Pinche sobre el plugin correspondiente la opción [instalar]() y posteriormente [activar]()
 					</section>
 				</section>
 
