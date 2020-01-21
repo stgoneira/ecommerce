@@ -53,7 +53,20 @@
 				</section>
 
 				<!-- Introducción -->
-				<section>					
+				<section>
+					<section data-markdown="">
+						## [Objetivos]()
+	
+						- [Terminar]() con un [sitio operativo o semioperativo]() (en cuanto a pagos)
+							* Comprender las [diferencias]() de un [entorno]() de [Desarrollo]() y uno de [Producción]() 
+							* [Instalar WP]() en entorno de [Producción]()
+							* [Configurar Woocommerce]()
+							* Instalar y Configurar [medios de Pagos]()
+							* Instalar y Configurar los [Envíos]()
+							* Cambiar la [apariencia]() del sitio
+					</section>
+				</section>
+				<section>
 					<section data-markdown>
 						## [Sesión Anterior]()
 	
@@ -62,118 +75,49 @@
 						- Desarrollamos escuetamente un plan para nuestro proyecto de Ecommerce
 						- [Instalamos]() Wordpress y Woocommerce en una Ambiente de Desarrollo con XAMPP
 					</section>
-					<section data-markdown="">
-						## [Objetivos #1]()
-
-						- Instalar Wordpress y Woocommerce
-						- Comprender y configurar varios entornos para trabajo 
-						- Configurar Woocommerce
-						- Comprender las Traducciones en Wordpress 
-						- Configuración Envíos 						
-
+					<section>
+						<img src="img/diagrama-internet.png" style="width: 80%;">
 					</section>
 					<section data-markdown="">
-							## [Objetivos #2]()	
-							
-							- Instalación de Transbank y Configuración de Pagos 
-							- Instalación de Temas
-							- Personalización de Temas 
-							- Puesta en Producción 
-							- ¿Qué viene ahora?
-	
-						</section>
-					<section data-markdown="">
-						## [Estructura del Taller]()
+						## [Ambiente de Desarrollo ]()
 
-						- [Sesión #1]() - 10 a 14hrs - 16 Enero
-							* Teoría 
-							* Comparación
-							* Instalación 
-						- [Sesión #2]() - 10 a 14hrs - 22 Enero
-							* Carga contenido
-							* Configuración plataforma, pagos y envíos								
-							* Apariencia del sitio
-						- Pueden solicitar [asesoría personalizada]() post taller al CDN Pudahuel
+						- XAMPP incluye:
+							* Servidor HTTP (Apache)
+							* Servidor de Base de Datos (MySQL)
+						- XAMPP se [instala sólo una vez]()
+						- Recuerde [subir los servicios]() cada vez que necesite trabajar sobre su sitio
+					</section>
+					<section data-markdown="">
+						## [Ambiente de Producción]()
+
+						- [CPanel]() incluye:
+							* Servidor [HTTP]() (Apache o Nginx)
+							* Servidor de [Base de Datos]() (MySQL o MariaDB)
+							* Servidor [DNS]()
+					</section>
+					<section data-markdown="">
+						## [Hasta dónde llegamos]()
+
+						1. Instalar XAMPP
+						1. Instalar Wordpress
+						1. Instalar Woocommerce
 					</section>
 				</section>
 
 				<section>
 					<section data-markdown="">
-						## [Introducción]()
+						## [Introducción al CPanel]()
 
-						- Comparación Wordpress y Shopify (desde 29USD x mes)
-						- Servidor, Licencia
-						- Mantención: Respaldos, Actualizaciones
-					</section>
-				</section>
-
-				<section>
-					<section data-markdown="">
-						## [Instalación]() 
-
-						- Desarrollo
-							* XAMPP (desktop, laptop)
-						- Producción
-							* Hosting (cpanel) 
-							* VPS 
-							* Servidor
+						- [Facilita]() la [administración]() de un servidor a través de clicks
+						- [Softaculous]() permite instalar software de manera fácil
+						- Otros elementos del CPanel
+							* Bases de Datos 
+							* Correos 
+							* File Manager 
+							* Otros 
 					</section>
 					<section data-markdown="">
-						## [Instalación]() 
-
-						- Lo necesario:
-							* Dominio (.cl, .com u otro)
-							* Servidor DNS 
-							* Servidor BD (MySQL, MariaDB)								
-							* Servidor HTTP (Apache, Nginx)
-					</section>
-					<section data-markdown="">
-						## [Formas Instalación]()
-
-						- Softaculous
-						- Manual 
-					</section>
-					<section data-markdown="">
-						## [Softaculous]() 
-
-						- Introducción al Cpanel
-							* Gestión BD
-							* Gestión archivos
-							* Otras secciones
-						- Instalación SW
-					</section>
-					<section data-markdown="">
-						## Instalación Manual en XAMPP
-
-						- Descargar desde [https://wordpress.org/download/](https://wordpress.org/download/)
-						- Subir servicios
-						- Configurar DB 
-						- Instalar
-						- Anotar contraseñas
-					</section>
-					<section data-markdown="">
-						## [Instalación Manual]()
-
-						- Descargar WP 
-						- Transferir al servidor
-							* FTP 
-							* Cpanel 
-						- Conocer credenciales:
-							* FTP 
-							* Base de Datos
-					</section>
-					<section data-markdown="">
-						## [LAMP]()
-
-						- Stack: Linux, Apache, MySQL, PHP
-						- Permisos en Linux
-					</section>
-					<section data-markdown="">
-						## [Permisos en Linux]()
-
-						- Ver en Cpanel 
-						- Teoría 
-						![Linux Permissions](https://i.redd.it/vkxuqbatopk21.png)
+						# [Instalación WP Softaculous]()
 					</section>
 				</section>
 
@@ -190,53 +134,21 @@
 
 						![Estructura WP](img/wp-structure.png)
 					</section>
-				</section>
-				
-				<section>
 					<section data-markdown="">
-						## [Traducciones]()
+						## [Instalación Componentes]()
 
-						- Cambio de idioma en:
-							* [Ajustes &gt; Generales &gt; Idioma del sitio]()
-						- Descargar archivos [.mo]()
-						- Colocar archivos en [wp-content/languages]()
-						- Personalización de traducciones con [plugin Loco]()
+						- Instalación por click 
+						- Instalación Manual 
 					</section>
-					<section data-markdown="">
-						## Recursos
-
-						- Loco Plugin:
-						[https://wordpress.org/plugins/loco-translate/](https://wordpress.org/plugins/loco-translate/)
-						- Traducción Core Wordpress:
-						[https://make.wordpress.org/polyglots/teams/?locale=es_ES](https://make.wordpress.org/polyglots/teams/?locale=es_ES)
-						- Traducción Woocommerce:
-						[https://translate.wordpress.org/projects/wp-plugins/woocommerce/stable/es/default/](https://translate.wordpress.org/projects/wp-plugins/woocommerce/stable/es/default/)
-					</section>
-					
 				</section>
 
-				<section>
-					<section data-markdown="">
-						## [Woocommerce]()
+				<section data-markdown="">
+					## [Gestión del Catálogo]()
 
-						- Introducción 
-						- Descargar
-						- Instalar 
-					</section>
-					<section data-markdown="">
-						## [Instalación Automática]()
-
-						- Ir a sección Plugins 
-						- Configurar FTP 
-						- Instalar Woocommerce
-					</section>
-					<section data-markdown="">
-						## [Instalación Manual]()
-
-						- Descargar de [https://wordpress.org/plugins/woocommerce/](https://wordpress.org/plugins/woocommerce/)
-						- Mover a [wp-content/plugins]()
-						- Activar desde Administración
-					</section>
+					1. Crear Árbol de Categorías
+					1. Crear Productos
+					1. Vincular a través de uno o más menus
+					1. Demostración 
 				</section>
 
 				<section>
@@ -246,16 +158,31 @@
 						- Transferencia bancaria directa 
 						- Pagos por cheque 
 						- Contraentrega
-						- Paypal 
 						- Transbank
+						- Otros 
 					</section>
 					<section data-markdown="">
 						## [Woocommerce Transbank]()
 
-						- Descargar de [https://www.transbankdevelopers.cl/plugin/woocommerce/](https://www.transbankdevelopers.cl/plugin/woocommerce/)
-						- Mover a [wp-content/plugins]()
+						- Plugins &rarr; [Añadir Nuevo]()
+						- Buscar [transbank]()
+						- Instalar: [Webpay Plus Webservices para Woocommerce]()
 						- Activar 
-						- En XAMPP activar SOAP en php.ini 
+					</section>
+					<section data-markdown="">
+						## [Woocommerce Transbank]()
+
+						- Probablemente arrojará un error: [Fatal error: Uncaugh Error: Class 'SoapClient']()
+						- Para funcionar con Transbank debemos [activar extensión SOAP]()
+							* Ir a XAMPP Control &rarr; Apache Config &rarr; php.ini
+							* Modificar archivo para activar extensión SOAP 
+							* Reiniciar servidor Apache (Stop y luego Start)
+						```ini
+						; antes 
+						;extension=soap 
+						; después 
+						extension=soap 
+						```
 					</section>
 					<section data-markdown="">
 						## [Pruebas]() 
@@ -317,6 +244,36 @@
 					</section>
 					<section data-markdown="">
 						## Instalación Nuevo Tema 
+					</section>
+				</section>
+
+
+				<section>
+					<section data-markdown="">
+						## [Traducciones]()
+
+						- Cambio de idioma en:
+							* [Ajustes &gt; Generales &gt; Idioma del sitio]()
+						- Descargar archivos [.mo]()
+						- Colocar archivos en [wp-content/languages]()
+						- Personalización de traducciones con [plugin Loco]()
+					</section>
+					<section data-markdown="">
+						## Recursos
+
+						- Loco Plugin:
+						[https://wordpress.org/plugins/loco-translate/](https://wordpress.org/plugins/loco-translate/)
+						- Traducción Core Wordpress:
+						[https://make.wordpress.org/polyglots/teams/?locale=es_ES](https://make.wordpress.org/polyglots/teams/?locale=es_ES)
+						- Traducción Woocommerce:
+						[https://translate.wordpress.org/projects/wp-plugins/woocommerce/stable/es/default/](https://translate.wordpress.org/projects/wp-plugins/woocommerce/stable/es/default/)
+					</section>
+					
+				</section>
+
+				<section>
+					<section data-markdown="">
+						## FAQ
 					</section>
 				</section>
 				
