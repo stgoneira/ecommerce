@@ -230,8 +230,8 @@
 							* Contraentrega
 						- [Online]()
 							* Transbank 
-							* Flow 
-							* Khipu 
+							* [Flow](https://www.flow.cl/woocommerce.php)
+							* [Khipu](https://khipu.com/page/woocommerce)
 							* Otros 
 					</section>
 					<section data-markdown="">
@@ -292,15 +292,41 @@
 
 				<section>
 					<section data-markdown="">
-						## [Shipping]()
+						## [Envíos - Alternativas]()
 
-						- Precio Fijo 
+						- Tarifa Fija
 						- Envío Gratuito 
 						- Recogida en Local 
-						- Clases de Envío
+						- Valor envío según clases
+						- Integraciones con Chilexpress, Starken u otros
 					</section>
 					<section data-markdown="">
-						## Ejemplos 
+						## [Plugins a Utilizar]()
+
+						- Regiones de Chile para Woocommerce
+					</section>
+					<section data-markdown="">
+						## [Configuración]()
+
+						- Vaya a [Woocommerce &rarr; Ajustes]()
+						- Pestaña Envío 
+						- Opciones de Envío 
+						- Marque [Activar el modo de depuración]() para trabajar mejor 
+					</section>
+					<section data-markdown="">
+						## [Ejemplos]()
+
+						- Cobro Fijo
+						- Cobro por Clase
+						- Cobro Fijo por Región [(orden de las reglas)]()
+						- Cobro Fijo por Región y Clase [(orden de las reglas)]()
+					</section>					
+					<section data-markdown="">
+						## [Actividad 10-15min]()
+
+						- Configure el envío de al menos 5 productos
+						- Utilice clases
+						- Configure por región
 					</section>
 				</section>
 
@@ -377,7 +403,37 @@
 
 				<section>
 					<section data-markdown="">
-						## FAQ
+						## [FAQ]()
+
+						- [¿Cómo ver detalle de errores?]()
+							* En wp-config.php activar WP_DEBUG
+						```php
+						define( 'WP_DEBUG', true );
+						```
+					</section>
+					<section data-markdown="">
+						## [FAQ]()
+
+						- [Por el contrario, si quiero ocultar los inofensivos WARNINGs]()
+						```php
+						ini_set(‘display_errors’,’Off’);
+						ini_set(‘error_reporting’, E_ALL );
+						define(‘WP_DEBUG’, false);
+						define(‘WP_DEBUG_DISPLAY’, false);
+						```
+					</section>
+					<section data-markdown="">
+						## [FAQ]()
+
+						- [Ya realice mi sitio en ambiente de desarrollo, ahora ¿cómo lo migro?]()
+							* [Respaldo]() los archivos como un [ZIP]() (carpeta de instalación de wordpress)
+							* [Respaldo]() la [Base de Datos]() desde [phpMyAdmin]()
+							* [Restauro]() los archivos en mi [servidor de producción]()
+							* [Agrego]() al archivo [wp-config.php]() lo siguiente: 
+						```php
+						define('WP_HOME','http://example.com');
+						define('WP_SITEURL','http://example.com');
+						```
 					</section>
 				</section>
 				
